@@ -135,7 +135,7 @@ Get-ChildItem -recurse | where { $_.PSIsContainer -eq $false } |% {
   Write-Output $out >> test.html ;
  }
  # PICTURES
- elseif ( $_.Extension -eq ".jpg" -or $_.Extension -eq ".gif" -or $_.Extension -eq ".png" or $_.Extension -eq ".jpeg" -or $_.Extension -eq ".bmp" -or $_.Extension -eq ".tiff" )
+ elseif ( $_.Extension -eq ".jpg" -or $_.Extension -eq ".gif" -or $_.Extension -eq ".png" -or $_.Extension -eq ".jpeg" -or $_.Extension -eq ".bmp" -or $_.Extension -eq ".tiff" )
  {
   $out= "<div class='file purple' onclick='window.location=`"" + $relPath + "`"'>";
   Write-Output $out >> test.html ;
